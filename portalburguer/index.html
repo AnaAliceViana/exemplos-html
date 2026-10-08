@@ -1,0 +1,586 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portal Burguer</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <!-- =====================================================
+       CABEÇALHO
+  ====================================================== -->
+
+  <header>
+
+    <div class="logo">
+
+      <!-- 🖼️ IMAGEM DO LOGO
+           Arquivo: img/burguer.png
+      -->
+      <img src="img/burguer.png" alt="Logo do Portal Burguer">
+
+      <span>Portal Burguer</span>
+
+    </div>
+
+
+    <nav>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#promo">Promoções</a>
+      <a href="#pedido">Pedido</a>
+    </nav>
+
+  </header>
+
+
+
+  <main>
+
+
+    <!-- =====================================================
+         🍔 PARTE PRINCIPAL / HERO
+    ====================================================== -->
+
+    <section class="hero">
+
+      <div class="hero-conteudo">
+
+        <span class="destaque">
+          🍔 FEITO PARA QUEM AMA BURGUER
+        </span>
+
+
+        <h1>
+          O melhor burguer
+          <br>
+          <span>da turma!</span>
+        </h1>
+
+
+        <p>
+          Hambúrgueres deliciosos, ingredientes especiais
+          e aquele sabor que dá vontade de repetir.
+        </p>
+
+
+        <div class="hero-botoes">
+
+          <a href="#cardapio" class="botao">
+            Ver cardápio
+          </a>
+
+          <a href="#pedido" class="botao botao-secundario">
+            Fazer pedido
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- =================================================
+           🖼️ IMAGEM PRINCIPAL
+           Arquivo: img/burguer.png
+      ================================================== -->
+
+      <div class="hero-emoji">
+
+        <img
+          src="img/burguer.png"
+          alt="Hambúrguer do Portal Burguer"
+        >
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         🍔 CARDÁPIO
+    ====================================================== -->
+
+    <section class="cardapio" id="cardapio">
+
+
+      <div class="titulo-secao">
+
+        <span>NOSSO CARDÁPIO</span>
+
+        <h2>Escolha seu favorito</h2>
+
+        <p>
+          Opções preparadas especialmente para matar sua fome.
+        </p>
+
+      </div>
+
+
+
+      <div class="lista-cards">
+
+
+        <!-- =================================================
+             CARD 1 — CLÁSSICO
+        ================================================== -->
+
+        <div class="card">
+
+          <div class="card-topo">
+
+
+            <!-- =============================================
+                 🖼️ IMAGEM DO CARD 1
+                 Arquivo: img/burguer02.png
+
+                 Se quiser trocar essa imagem,
+                 é SÓ ALTERAR "burguer02.png"
+            ============================================== -->
+
+            <img
+              src="img/burguer02.png"
+              alt="Hambúrguer Clássico"
+              class="imagem-burguer"
+            >
+
+
+            <span class="favorito">
+              ★ Favorito
+            </span>
+
+          </div>
+
+
+          <h3>Clássico</h3>
+
+
+          <p>
+            Pão macio, carne suculenta, queijo,
+            alface e tomate.
+          </p>
+
+
+          <div class="card-final">
+
+            <span class="preco">
+              R$ 18,00
+            </span>
+
+            <button class="mini-botao">
+              +
+            </button>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CARD 2 — BACON MAX
+        ================================================== -->
+
+        <div class="card destaque-card">
+
+          <div class="card-topo">
+
+
+            <!-- 🖼️ ÍCONE DO CARD 2 -->
+
+            <div class="emoji">
+  <img src="img/bacon.png" alt="Bacon Max">
+</div>
+
+
+            <span class="favorito">
+              🔥 Mais pedido
+            </span>
+
+          </div>
+
+
+          <h3>Bacon Max</h3>
+
+
+          <p>
+            Carne dupla, bacon crocante, cheddar
+            cremoso e molho especial.
+          </p>
+
+
+          <div class="card-final">
+
+            <span class="preco">
+              R$ 26,00
+            </span>
+
+            <button class="mini-botao">
+              +
+            </button>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CARD 3 — VEGANO
+        ================================================== -->
+
+        <div class="card">
+
+          <div class="card-topo">
+
+
+            <!-- 🖼️ ÍCONE DO CARD 3 -->
+
+            <div class="emoji">
+            <img src="img/vegano.png" alt="Hambúrguer Veggie">
+            </div>
+
+            <span class="favorito">
+              🌱 Leve
+            </span>
+
+          </div>
+
+
+          <h3>Veggie</h3>
+
+
+          <p>
+            Hambúrguer de grão-de-bico, vegetais
+            frescos e molho verde.
+          </p>
+
+
+          <div class="card-final">
+
+            <span class="preco">
+              R$ 22,00
+            </span>
+
+            <button class="mini-botao">
+              +
+            </button>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CARD 4 — BATATA FRITA
+        ================================================== -->
+
+        <div class="card">
+
+          <div class="card-topo">
+
+
+            <!-- 🖼️ ÍCONE DO CARD 4 -->
+
+            <div class="emoji">
+            <img src="img/batata-frita.png" alt="Hambúrguer Veggie">
+            </div>
+
+
+            <span class="favorito">
+              ❤️ Queridinha
+            </span>
+
+          </div>
+
+
+          <h3>Batata Frita</h3>
+
+
+          <p>
+            Batatas crocantes e douradas,
+            perfeitas para acompanhar.
+          </p>
+
+
+          <div class="card-final">
+
+            <span class="preco">
+              R$ 12,00
+            </span>
+
+            <button class="mini-botao">
+              +
+            </button>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         🔥 PROMOÇÕES
+    ====================================================== -->
+
+    <section class="promo" id="promo">
+
+
+      <div class="titulo-secao titulo-promo">
+
+        <span>
+          🔥 OFERTAS ESPECIAIS
+        </span>
+
+        <h2>
+          Promoções da semana
+        </h2>
+
+      </div>
+
+
+
+      <div class="lista-promo">
+
+
+        <div class="promo-item">
+
+          <div class="promo-icone">
+            🔥
+          </div>
+
+          <div>
+
+            <strong>
+              Combo Clássico
+            </strong>
+
+            <p>
+              + Refri por apenas R$ 22
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="promo-item">
+
+          <div class="promo-icone">
+            🎉
+          </div>
+
+          <div>
+
+            <strong>
+              Quarta-feira
+            </strong>
+
+            <p>
+              Batata grátis no seu pedido!
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="promo-item">
+
+          <div class="promo-icone">
+            ⭐
+          </div>
+
+          <div>
+
+            <strong>
+              Promoção especial
+            </strong>
+
+            <p>
+              Compre 2 e leve 3!
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         🛒 PEDIDO
+    ====================================================== -->
+
+    <section class="pedido" id="pedido">
+
+
+      <div class="pedido-conteudo">
+
+
+        <div class="pedido-texto">
+
+          <span>
+            🍔 PEÇA AGORA
+          </span>
+
+          <h2>
+            Monte seu pedido
+          </h2>
+
+          <p>
+            Escolha seu lanche favorito
+            e prepare-se para saborear!
+          </p>
+
+        </div>
+
+
+
+        <div class="formulario">
+
+
+          <div class="campo">
+
+            <label for="nome">
+              Nome
+            </label>
+
+            <input
+              type="text"
+              id="nome"
+              placeholder="Digite seu nome"
+            >
+
+          </div>
+
+
+
+          <div class="campo">
+
+            <label for="lanche">
+              Escolha seu lanche
+            </label>
+
+            <select id="lanche">
+
+              <option>
+                Clássico
+              </option>
+
+              <option>
+                Bacon Max
+              </option>
+
+              <option>
+                Veggie
+              </option>
+
+              <option>
+                Batata Frita
+              </option>
+
+            </select>
+
+          </div>
+
+
+
+          <div class="campo">
+
+            <label for="qtd">
+              Quantidade
+            </label>
+
+            <input
+              type="number"
+              id="qtd"
+              value="1"
+              min="1"
+            >
+
+          </div>
+
+
+
+          <button class="botao enviar">
+            🍔 Enviar pedido
+          </button>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- =====================================================
+       RODAPÉ
+  ====================================================== -->
+
+  <footer>
+
+
+    <div class="footer-logo">
+      🍔 Portal Burguer
+    </div>
+
+
+    <p>
+      Sabor que conquista.
+      Praticidade que combina com você.
+    </p>
+
+
+    <div class="redes">
+
+      <span>
+        Instagram
+      </span>
+
+      <span>
+        TikTok
+      </span>
+
+      <span>
+        WhatsApp
+      </span>
+
+    </div>
+
+
+    <small>
+      #portalburguer • É só praticar!
+    </small>
+
+
+  </footer>
+
+
+</body>
+</html>
+

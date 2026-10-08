@@ -1,0 +1,733 @@
+/* =========================================================
+   CONFIGURAÇÕES GERAIS
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fffaf3;
+  color: #2b1d1d;
+}
+
+
+/* =========================================================
+   CABEÇALHO
+========================================================= */
+
+header {
+  background: #ffffff;
+  padding: 18px 8%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+/* =========================================================
+   🖼️ IMAGEM DO LOGO
+   Arquivo usado:
+   img/burguer.png
+========================================================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 29px;
+  font-weight: bold;
+  color: #9316a3;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+
+/* MENU */
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2b1d1d;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #c019d2;
+}
+
+
+/* =========================================================
+   🍔 HERO
+========================================================= */
+
+.hero {
+  min-height: 600px;
+
+  padding: 80px 8%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 50px;
+
+  background: linear-gradient(
+    135deg,
+    #fffaf3,
+    #f5e9d8
+  );
+}
+
+.hero-conteudo {
+  max-width: 600px;
+}
+
+.destaque {
+  display: inline-block;
+
+  background: #fce6fb;
+  color: #9316a3;
+
+  padding: 10px 18px;
+
+  border-radius: 30px;
+
+  font-weight: bold;
+  font-size: 14px;
+
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  line-height: 1.05;
+
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  color: #c019d2;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.6;
+
+  color: #6d5a5a;
+
+  margin-bottom: 30px;
+}
+
+
+/* BOTÕES */
+
+.hero-botoes {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.botao {
+  display: inline-block;
+
+  background: #c019d2;
+  color: white;
+
+  padding: 15px 25px;
+
+  border-radius: 30px;
+
+  text-decoration: none;
+  font-weight: bold;
+
+  border: none;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background: #9316a3;
+
+  transform: translateY(-3px);
+}
+
+.botao-secundario {
+  background: transparent;
+  color: #c019d2;
+
+  border: 2px solid #c019d2;
+}
+
+.botao-secundario:hover {
+  color: white;
+}
+
+
+/* =========================================================
+   🍔 IMAGEM PRINCIPAL DO HERO
+   Arquivo usado:
+   img/burguer.png
+========================================================= */
+
+.hero-emoji {
+  width: 330px;
+  height: 330px;
+
+  background: #fffaf3;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+  transform: rotate(3deg);
+}
+
+.hero-emoji img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   TÍTULOS
+========================================================= */
+
+.titulo-secao {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.titulo-secao > span {
+  color: #c019d2;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  letter-spacing: 1px;
+}
+
+.titulo-secao h2 {
+  font-size: 38px;
+
+  margin: 10px 0;
+}
+
+.titulo-secao p {
+  color: #7c6969;
+}
+
+
+/* =========================================================
+   🍔 CARDÁPIO
+========================================================= */
+
+.cardapio {
+  padding: 90px 8%;
+}
+
+.lista-cards {
+  display: flex;
+
+  justify-content: center;
+  align-items: stretch;
+
+  gap: 25px;
+
+  flex-wrap: wrap;
+}
+
+
+/* CARDS */
+
+.card {
+  background: white;
+
+  width: 260px;
+
+  padding: 25px;
+
+  border-radius: 25px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.13);
+}
+
+.destaque-card {
+  border: 2px solid #e972f7;
+}
+
+
+/* =========================================================
+   🖼️ IMAGEM DO CARD 1
+   Arquivo usado:
+   img/burguer02.png
+
+   ESTA É A IMAGEM QUE FOI CORRIGIDA
+========================================================= */
+
+.card-topo {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 20px;
+}
+
+.card-topo .imagem-burguer {
+  width: 90px;
+  height: 90px;
+
+  /* Não deixa a imagem deformada */
+  object-fit: contain;
+
+  display: block;
+
+  /* Deixa a imagem reta */
+  transform: rotate(0deg);
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   🥓🌱🍟 ÍCONES DOS OUTROS CARDS
+========================================================= */
+
+.emoji {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff5e9;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.emoji img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* ETIQUETAS */
+
+.favorito {
+  background: #fce6fb;
+
+  color: #9316a3;
+
+  padding: 7px 10px;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  white-space: nowrap;
+}
+
+
+/* TEXTO DOS CARDS */
+
+.card h3 {
+  font-size: 23px;
+
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #766666;
+
+  line-height: 1.5;
+
+  font-size: 14px;
+
+  flex-grow: 1;
+}
+
+
+/* PREÇO */
+
+.card-final {
+  margin-top: 20px;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.preco {
+  color: #9316a3;
+
+  font-size: 20px;
+
+  font-weight: bold;
+}
+
+
+/* BOTÃO + */
+
+.mini-botao {
+  width: 35px;
+  height: 35px;
+
+  border-radius: 50%;
+
+  border: none;
+
+  background: #c019d2;
+
+  color: white;
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.mini-botao:hover {
+  background: #9316a3;
+
+  transform: scale(1.1);
+}
+
+
+/* =========================================================
+   🔥 PROMOÇÕES
+========================================================= */
+
+.promo {
+  padding: 80px 8%;
+
+  background: #2b1d1d;
+
+  color: white;
+}
+
+.titulo-promo h2 {
+  color: white;
+}
+
+.lista-promo {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+.promo-item {
+  background: #3a2929;
+
+  padding: 25px;
+
+  border-radius: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  width: 300px;
+}
+
+.promo-icone {
+  font-size: 35px;
+}
+
+.promo-item strong {
+  font-size: 17px;
+}
+
+.promo-item p {
+  margin-top: 5px;
+
+  color: #d7caca;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   🛒 PEDIDO
+========================================================= */
+
+.pedido {
+  padding: 90px 8%;
+}
+
+.pedido-conteudo {
+  max-width: 1000px;
+
+  margin: auto;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 60px;
+}
+
+.pedido-texto {
+  flex: 1;
+}
+
+.pedido-texto > span {
+  color: #c019d2;
+
+  font-weight: bold;
+}
+
+.pedido-texto h2 {
+  font-size: 40px;
+
+  margin: 15px 0;
+}
+
+.pedido-texto p {
+  color: #766666;
+
+  line-height: 1.6;
+}
+
+
+/* FORMULÁRIO */
+
+.formulario {
+  flex: 1;
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 25px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.campo {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  margin-bottom: 18px;
+}
+
+.campo label {
+  font-weight: bold;
+
+  font-size: 14px;
+}
+
+.campo input,
+.campo select {
+  padding: 13px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+
+  outline: none;
+
+  font-size: 14px;
+}
+
+.campo input:focus,
+.campo select:focus {
+  border-color: #c019d2;
+}
+
+.enviar {
+  width: 100%;
+}
+
+
+/* =========================================================
+   RODAPÉ
+========================================================= */
+
+footer {
+  background: #1f1616;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 45px 20px;
+}
+
+.footer-logo {
+  font-size: 25px;
+
+  font-weight: bold;
+
+  margin-bottom: 10px;
+}
+
+footer p {
+  color: #cdbebe;
+
+  margin-bottom: 20px;
+}
+
+.redes {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 20px;
+}
+
+.redes span {
+  background: #352626;
+
+  padding: 9px 15px;
+
+  border-radius: 20px;
+
+  font-size: 13px;
+}
+
+footer small {
+  color: #9a5fa0;
+}
+
+
+/* =========================================================
+   📱 RESPONSIVIDADE
+========================================================= */
+
+@media (max-width: 800px) {
+
+  header {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  nav {
+    gap: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .hero-botoes {
+    justify-content: center;
+  }
+
+  .hero-emoji {
+    width: 270px;
+    height: 270px;
+  }
+
+  .pedido-conteudo {
+    flex-direction: column;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .logo {
+    font-size: 23px;
+  }
+
+  .hero {
+    padding: 60px 5%;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .cardapio,
+  .pedido {
+    padding: 60px 5%;
+  }
+
+  .card {
+    width: 100%;
+
+    max-width: 320px;
+  }
+
+}
+
